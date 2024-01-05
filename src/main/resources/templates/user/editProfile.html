@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+
+</head>
+
+<body>
+	<section>
+		<div class="container p-3">
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<div class="card">
+						<div class="card-header text-center fs-4">Edit Profile</div>
+
+						<th:block th:if="${session.msg}">
+							<p class="text-center fs-4 text-success">[[${session.msg}]]</p>
+							<th:block th:text="${#session.removeAttribute('msg')}"></th:block>
+						</th:block>
+
+						<div class="card-body">
+							<form action="/user/updateProfile" method="post">
+								<div class="mb-3">
+									<label>Enter Full Name</label> <input type="text" name="fullName"
+										th:value="${user.fullName}" class="form-control">
+
+								</div>
+								<div class="mb-3">
+									<label>Enter Email Address</label> <input type="text" name="email"
+										th:value="${user.email}" class="form-control">
+								</div>
+
+								<div class="mb-3">
+									<label>Enter Mobile Number</label> <input type="number" name="mobileNumber"
+										th:value="${user.mobileNumber}" class="form-control">
+								</div>
+
+
+								<div class="mb-3">
+									<label>Enter Address</label> <input type="text" name="address"
+										th:value="${user.address}" class="form-control">
+								</div>
+								<div class="mb-3">
+									<label>Enter Qualification</label> <input type="text" name="qualification"
+										th:value="${user.qualification}" class="form-control">
+								</div>
+
+								<button class="btn btn-primary col-md-12" onclick="myFunction()">Update</button>
+								
+							<script>
+                                  function myFunction() {
+                                  alert("profile has been successfully updated...!");
+                                  }
+                            </script>
+                            
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+</body>
+
+</html>

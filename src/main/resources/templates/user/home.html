@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body >
+	<section style="color: rgb(64, 0, 128);">
+		<br>
+		<h1>User After Login: Home Page</h1>
+	    <br>
+	    <h1>Name : [[${user.fullName}]]</h1>
+	    <h1>Mobile No. : [[${user.mobileNumber}]]</h1>
+	    <h1>Email : [[${user.email}]]</h1>
+	</section>	
+</body>
