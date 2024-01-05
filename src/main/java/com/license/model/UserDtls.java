@@ -2,12 +2,18 @@ package com.license.model;
 
 
 
+import java.sql.Date;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 
 import lombok.Data;
 
@@ -21,9 +27,12 @@ public class UserDtls {
 
 	private String fullName;
 
+	@Column(unique = true)  // Ensure uniqueness in the database
 	private String email;
 
 	private String password;
+	
+	private Date passwordUpdatedAt ;
 	  
 	private String mobileNumber;
 	
@@ -38,6 +47,15 @@ public class UserDtls {
 	@JoinColumn(name="role_id")
      Role  roles ;
      
+	
+	@OneToOne( cascade = CascadeType.ALL , fetch = FetchType.EAGER)
+	private License license;
+  
+	
+	
+	
+	
+	
 	
 
 }

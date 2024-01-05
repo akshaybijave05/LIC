@@ -2,6 +2,7 @@ package com.license.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
+
 import com.license.model.UserDtls;
 
 public interface UserRepository extends JpaRepository<UserDtls, Integer> {
@@ -15,6 +16,13 @@ public interface UserRepository extends JpaRepository<UserDtls, Integer> {
 	public UserDtls findByVerificationCode(String code);
 
 	public void deleteByEmail(String email);	
+	
+	
+	
+	UserDtls findByEmailAndPassword(String email, String password);
+
+	UserDtls findByEmail(String currentUser);
+
 
 	
 }
