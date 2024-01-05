@@ -1,4 +1,4 @@
-package com.license.service;
+package com.license.serviceImpl;
 
 import java.security.Principal;
 
@@ -15,6 +15,7 @@ import com.license.model.Role;
 import com.license.model.UserDtls;
 import com.license.repository.RoleRepository;
 import com.license.repository.UserRepository;
+import com.license.service.UserService;
 
 import net.bytebuddy.utility.RandomString;
 
