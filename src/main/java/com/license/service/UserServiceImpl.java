@@ -1,4 +1,4 @@
-package com.becoder.service;
+package com.license.service;
 
 import java.security.Principal;
 
@@ -11,10 +11,10 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.becoder.model.Role;
-import com.becoder.model.UserDtls;
-import com.becoder.repository.RoleRepository;
-import com.becoder.repository.UserRepository;
+import com.license.model.Role;
+import com.license.model.UserDtls;
+import com.license.repository.RoleRepository;
+import com.license.repository.UserRepository;
 
 import net.bytebuddy.utility.RandomString;
 

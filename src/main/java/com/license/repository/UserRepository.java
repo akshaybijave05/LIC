@@ -1,8 +1,8 @@
-package com.becoder.repository;
+package com.license.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.becoder.model.UserDtls;
+import com.license.model.UserDtls;
 
 public interface UserRepository extends JpaRepository<UserDtls, Integer> {
 

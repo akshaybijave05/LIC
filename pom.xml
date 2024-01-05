@@ -8,11 +8,11 @@
 		<version>2.7.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.becoder</groupId>
-	<artifactId>DPR-APPLICATION</artifactId>
+	<groupId>com.license</groupId>
+	<artifactId>LIC</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name></name>
-	<description>Kpmg-Dpr Project </description>
+	<description>License Module Project</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>

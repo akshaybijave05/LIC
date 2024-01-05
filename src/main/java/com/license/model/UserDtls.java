@@ -1,4 +1,4 @@
-package com.becoder.model;
+package com.license.model;
 
 
 

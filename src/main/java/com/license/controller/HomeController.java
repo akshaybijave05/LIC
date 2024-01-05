@@ -1,4 +1,4 @@
-package com.becoder.controller;
+package com.license.controller;
 
 
 import java.security.Principal;
@@ -18,9 +18,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.becoder.model.UserDtls;
-import com.becoder.repository.UserRepository;
-import com.becoder.service.UserService;
+import com.license.model.UserDtls;
+import com.license.repository.UserRepository;
+import com.license.service.UserService;
 
 
 

@@ -1,4 +1,4 @@
-package com.becoder.config;
+package com.license.config;
 
 import java.io.IOException;
 import java.util.Set;

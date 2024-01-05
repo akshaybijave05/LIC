@@ -1,4 +1,4 @@
-package com.becoder.controller;
+package com.license.controller;
 
 
 import org.springframework.stereotype.Controller;

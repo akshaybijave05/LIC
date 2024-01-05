@@ -1,4 +1,4 @@
-package com.becoder.config;
+package com.license.config;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -7,7 +7,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.becoder.model.UserDtls;
+import com.license.model.UserDtls;
 
 public class CustomUserDetails implements UserDetails {
 

@@ -1,4 +1,4 @@
-package com.becoder.config;
+package com.license.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

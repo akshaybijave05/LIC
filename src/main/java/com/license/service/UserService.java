@@ -1,8 +1,8 @@
-package com.becoder.service;
+package com.license.service;
 
 import java.security.Principal;
 
-import com.becoder.model.UserDtls;
+import com.license.model.UserDtls;
 
 public interface UserService {
 
