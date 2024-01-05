@@ -19,7 +19,7 @@
 	}
 
 	.color1 .change1:hover {
-		background-color: rgb(64, 128, 128);
+		background-color: rgb(0, 0, 255);
 		color: rgb(255, 255, 255);
 	}
 </style>
@@ -57,6 +57,10 @@
 								data-bs-toggle="dropdown" aria-expanded="false">
 								[[${user.fullName}]] </a>
 							<ul class="dropdown-menu color1" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item profile" href="user/profile">Profile</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
 								<li><a class="dropdown-item" href="editProfile">Edit Profile</a></li>
 								<li>
 									<hr class="dropdown-divider">
@@ -65,9 +69,7 @@
 								<li>
 									<hr class="dropdown-divider">
 								</li>
-								<li>
-									<hr class="dropdown-divider">
-								</li>
+								
 								<li><a class="dropdown-item logout1" href="/logout">Logout</a></li>
 							</ul>
 						</li>

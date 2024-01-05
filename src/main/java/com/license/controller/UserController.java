@@ -81,6 +81,11 @@ public class UserController {
 		return "redirect:/user/changPass";
 	}
 
+
+	@GetMapping("/profile")
+	public String profile() {
+		return "user/profile";
+	}
 	@GetMapping("/editProfile")
 	public String editProfile(ModelAndView ModelAndView, Principal p) {
 		ModelAndView.addObject("user", userRepo.findByEmail(p.getName()));
